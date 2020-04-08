@@ -1,22 +1,24 @@
 //
-//  MangaPopupViewController.swift
+//  PosterDetailViewController.swift
 //  Weebs Database
 //
-//  Created by Octavian Metta Wisnu on 03/04/20.
+//  Created by Octavian Metta Wisnu on 08/04/20.
 //  Copyright © 2020 Octavian Metta Wisnu. All rights reserved.
 //
 
 import UIKit
 
-class MangaPopupViewController: UIViewController {
-    
+class PosterDetailViewController: UIViewController {
 
-    @IBAction func dismissAction(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func backToHome(_ sender: Any) {
+        performSegue(withIdentifier: "unwindSegueToAnime", sender: self)
     }
+    @IBOutlet weak var posterImageView: UIImageView!
+    var posterImage: UIImage?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.posterImageView.image = posterImage
         // Do any additional setup after loading the view.
     }
     

@@ -11,7 +11,8 @@ import Alamofire
 
 class AnimeTableViewController: UITableViewController {
     
-   
+    @IBAction func unwindToAnimeTable(segue:UIStoryboardSegue) { }
+
     var topAnime: [Anime] = []
     var selectedAnimeId: Int = 0
     
