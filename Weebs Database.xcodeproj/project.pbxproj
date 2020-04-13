@@ -7,41 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		621F0177243EEA42006B3C91 /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621F0176243EEA42006B3C91 /* ApiServices.swift */; };
+		621F0179243F128F006B3C91 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621F0178243F128F006B3C91 /* Networkable.swift */; };
+		621F017D243F2D47006B3C91 /* AnimeProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621F017C243F2D47006B3C91 /* AnimeProviders.swift */; };
 		622C4DA9243462BF005DBBD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C4DA8243462BF005DBBD6 /* AppDelegate.swift */; };
 		622C4DAB243462BF005DBBD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C4DAA243462BF005DBBD6 /* ViewController.swift */; };
 		622C4DAE243462BF005DBBD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622C4DAC243462BF005DBBD6 /* Main.storyboard */; };
 		622C4DB0243462C1005DBBD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622C4DAF243462C1005DBBD6 /* Assets.xcassets */; };
-		6243F9CC243708E300B1C3E1 /* MangaPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6243F9CB243708E300B1C3E1 /* MangaPopupViewController.swift */; };
+		6243F9CC243708E300B1C3E1 /* MangaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6243F9CB243708E300B1C3E1 /* MangaDetailViewController.swift */; };
+		625237D92444475000CD30FF /* TopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625237D82444475000CD30FF /* TopResponse.swift */; };
+		625237DD2444552200CD30FF /* MangaProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625237DC2444552200CD30FF /* MangaProviders.swift */; };
+		625237E12444571400CD30FF /* MangaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625237E02444571400CD30FF /* MangaTableViewController.swift */; };
+		625237E4244460C600CD30FF /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625237E3244460C500CD30FF /* UIUtils.swift */; };
 		6277AC082435CE2F00A373D4 /* AnimeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AC072435CE2F00A373D4 /* AnimeDetailViewController.swift */; };
 		6277AC0B2435D39000A373D4 /* AnimeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AC0A2435D39000A373D4 /* AnimeDetail.swift */; };
 		6280AEE224347399004E551E /* AnimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280AEE124347399004E551E /* AnimeTableViewCell.swift */; };
 		6280AEE724348299004E551E /* AnimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280AEE624348299004E551E /* AnimeTableViewController.swift */; };
-		6280AEE92434968F004E551E /* TopAnime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280AEE82434968F004E551E /* TopAnime.swift */; };
-		6280AEEB243497EC004E551E /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280AEEA243497EC004E551E /* Anime.swift */; };
+		6280AEEB243497EC004E551E /* TopData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280AEEA243497EC004E551E /* TopData.swift */; };
 		6280AEED243499B0004E551E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280AEEC243499B0004E551E /* NetworkManager.swift */; };
 		62CE4042243DC21900B9439E /* PosterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE4041243DC21900B9439E /* PosterDetailViewController.swift */; };
-		7ACBAA55F7B6A60A216BCD00 /* Pods_Weebs_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C69FFE2F9F04E80FE6E2DC /* Pods_Weebs_Database.framework */; };
+		7FB98F706541DF4F23117C64 /* Pods_Weebs_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09E366E8E28CEF1BA8A6EAA /* Pods_Weebs_Database.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		621F0176243EEA42006B3C91 /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
+		621F0178243F128F006B3C91 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		621F017C243F2D47006B3C91 /* AnimeProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeProviders.swift; sourceTree = "<group>"; };
 		622C4DA5243462BF005DBBD6 /* Weebs Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weebs Database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		622C4DA8243462BF005DBBD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		622C4DAA243462BF005DBBD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		622C4DAD243462BF005DBBD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		622C4DAF243462C1005DBBD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		622C4DB4243462C1005DBBD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6243F9CB243708E300B1C3E1 /* MangaPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaPopupViewController.swift; sourceTree = "<group>"; };
+		6243F9CB243708E300B1C3E1 /* MangaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDetailViewController.swift; sourceTree = "<group>"; };
+		625237D82444475000CD30FF /* TopResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopResponse.swift; sourceTree = "<group>"; };
+		625237DC2444552200CD30FF /* MangaProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaProviders.swift; sourceTree = "<group>"; };
+		625237E02444571400CD30FF /* MangaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaTableViewController.swift; sourceTree = "<group>"; };
+		625237E3244460C500CD30FF /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		6277AC072435CE2F00A373D4 /* AnimeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailViewController.swift; sourceTree = "<group>"; };
 		6277AC0A2435D39000A373D4 /* AnimeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetail.swift; sourceTree = "<group>"; };
 		6280AEE124347399004E551E /* AnimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTableViewCell.swift; sourceTree = "<group>"; };
 		6280AEE624348299004E551E /* AnimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTableViewController.swift; sourceTree = "<group>"; };
-		6280AEE82434968F004E551E /* TopAnime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAnime.swift; sourceTree = "<group>"; };
-		6280AEEA243497EC004E551E /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		6280AEEA243497EC004E551E /* TopData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopData.swift; sourceTree = "<group>"; };
 		6280AEEC243499B0004E551E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		62CE4041243DC21900B9439E /* PosterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterDetailViewController.swift; sourceTree = "<group>"; };
-		9A666FE9C7BA30DD6F07045E /* Pods-Weebs Database.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weebs Database.debug.xcconfig"; path = "Target Support Files/Pods-Weebs Database/Pods-Weebs Database.debug.xcconfig"; sourceTree = "<group>"; };
-		B7C69FFE2F9F04E80FE6E2DC /* Pods_Weebs_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weebs_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F622CD4A3EF295AFDBB3D1D0 /* Pods-Weebs Database.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weebs Database.release.xcconfig"; path = "Target Support Files/Pods-Weebs Database/Pods-Weebs Database.release.xcconfig"; sourceTree = "<group>"; };
+		7508056F17DEF63F9157AF72 /* Pods-Weebs Database.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weebs Database.release.xcconfig"; path = "Target Support Files/Pods-Weebs Database/Pods-Weebs Database.release.xcconfig"; sourceTree = "<group>"; };
+		A0374255EE79D6798E2FDC2D /* Pods-Weebs Database.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weebs Database.debug.xcconfig"; path = "Target Support Files/Pods-Weebs Database/Pods-Weebs Database.debug.xcconfig"; sourceTree = "<group>"; };
+		A09E366E8E28CEF1BA8A6EAA /* Pods_Weebs_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weebs_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,20 +61,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ACBAA55F7B6A60A216BCD00 /* Pods_Weebs_Database.framework in Frameworks */,
+				7FB98F706541DF4F23117C64 /* Pods_Weebs_Database.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		621F017A243F2CB5006B3C91 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				6280AEEA243497EC004E551E /* TopData.swift */,
+				6277AC0A2435D39000A373D4 /* AnimeDetail.swift */,
+				625237D82444475000CD30FF /* TopResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		621F017B243F2D2F006B3C91 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				621F017C243F2D47006B3C91 /* AnimeProviders.swift */,
+				625237DC2444552200CD30FF /* MangaProviders.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
 		622C4D9C243462BF005DBBD6 = {
 			isa = PBXGroup;
 			children = (
 				622C4DA7243462BF005DBBD6 /* Weebs Database */,
 				622C4DA6243462BF005DBBD6 /* Products */,
 				FD193671E8DFFCD83CEEC956 /* Pods */,
-				A2D0CCC5C4AAAED8C9FD4308 /* Frameworks */,
+				D8A5240E165B781A38BB0379 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +108,7 @@
 		622C4DA7243462BF005DBBD6 /* Weebs Database */ = {
 			isa = PBXGroup;
 			children = (
+				625237E2244460AF00CD30FF /* Utils */,
 				6277AC092435CE4E00A373D4 /* View Controller */,
 				6280AEE3243473A6004E551E /* UI Utils */,
 				622C4DBA2434632E005DBBD6 /* Network */,
@@ -92,12 +124,21 @@
 		622C4DBA2434632E005DBBD6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				6280AEE82434968F004E551E /* TopAnime.swift */,
-				6280AEEA243497EC004E551E /* Anime.swift */,
+				621F017B243F2D2F006B3C91 /* Providers */,
+				621F017A243F2CB5006B3C91 /* Responses */,
 				6280AEEC243499B0004E551E /* NetworkManager.swift */,
-				6277AC0A2435D39000A373D4 /* AnimeDetail.swift */,
+				621F0176243EEA42006B3C91 /* ApiServices.swift */,
+				621F0178243F128F006B3C91 /* Networkable.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		625237E2244460AF00CD30FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				625237E3244460C500CD30FF /* UIUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		6277AC092435CE4E00A373D4 /* View Controller */ = {
@@ -105,8 +146,9 @@
 			children = (
 				6280AEE624348299004E551E /* AnimeTableViewController.swift */,
 				6277AC072435CE2F00A373D4 /* AnimeDetailViewController.swift */,
-				6243F9CB243708E300B1C3E1 /* MangaPopupViewController.swift */,
+				6243F9CB243708E300B1C3E1 /* MangaDetailViewController.swift */,
 				62CE4041243DC21900B9439E /* PosterDetailViewController.swift */,
+				625237E02444571400CD30FF /* MangaTableViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -119,10 +161,10 @@
 			path = "UI Utils";
 			sourceTree = "<group>";
 		};
-		A2D0CCC5C4AAAED8C9FD4308 /* Frameworks */ = {
+		D8A5240E165B781A38BB0379 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B7C69FFE2F9F04E80FE6E2DC /* Pods_Weebs_Database.framework */,
+				A09E366E8E28CEF1BA8A6EAA /* Pods_Weebs_Database.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,8 +172,8 @@
 		FD193671E8DFFCD83CEEC956 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A666FE9C7BA30DD6F07045E /* Pods-Weebs Database.debug.xcconfig */,
-				F622CD4A3EF295AFDBB3D1D0 /* Pods-Weebs Database.release.xcconfig */,
+				A0374255EE79D6798E2FDC2D /* Pods-Weebs Database.debug.xcconfig */,
+				7508056F17DEF63F9157AF72 /* Pods-Weebs Database.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -143,11 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 622C4DB7243462C1005DBBD6 /* Build configuration list for PBXNativeTarget "Weebs Database" */;
 			buildPhases = (
-				C8746C2BBFDE443A98126C23 /* [CP] Check Pods Manifest.lock */,
+				C1700CEC30C337FF687B8FC2 /* [CP] Check Pods Manifest.lock */,
 				622C4DA1243462BF005DBBD6 /* Sources */,
 				622C4DA2243462BF005DBBD6 /* Frameworks */,
 				622C4DA3243462BF005DBBD6 /* Resources */,
-				C23EF9240EEB8B6555103730 /* [CP] Embed Pods Frameworks */,
+				DF928F5E64D69C641113D965 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,29 +246,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C23EF9240EEB8B6555103730 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Weebs Database/Pods-Weebs Database-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weebs Database/Pods-Weebs Database-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C8746C2BBFDE443A98126C23 /* [CP] Check Pods Manifest.lock */ = {
+		C1700CEC30C337FF687B8FC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -248,6 +268,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DF928F5E64D69C641113D965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weebs Database/Pods-Weebs Database-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weebs Database/Pods-Weebs Database-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,14 +301,20 @@
 			files = (
 				622C4DAB243462BF005DBBD6 /* ViewController.swift in Sources */,
 				62CE4042243DC21900B9439E /* PosterDetailViewController.swift in Sources */,
-				6280AEE92434968F004E551E /* TopAnime.swift in Sources */,
-				6280AEEB243497EC004E551E /* Anime.swift in Sources */,
+				621F0179243F128F006B3C91 /* Networkable.swift in Sources */,
+				6280AEEB243497EC004E551E /* TopData.swift in Sources */,
+				625237E12444571400CD30FF /* MangaTableViewController.swift in Sources */,
+				625237E4244460C600CD30FF /* UIUtils.swift in Sources */,
+				621F017D243F2D47006B3C91 /* AnimeProviders.swift in Sources */,
 				6280AEED243499B0004E551E /* NetworkManager.swift in Sources */,
+				625237DD2444552200CD30FF /* MangaProviders.swift in Sources */,
 				622C4DA9243462BF005DBBD6 /* AppDelegate.swift in Sources */,
+				625237D92444475000CD30FF /* TopResponse.swift in Sources */,
+				621F0177243EEA42006B3C91 /* ApiServices.swift in Sources */,
 				6280AEE224347399004E551E /* AnimeTableViewCell.swift in Sources */,
 				6277AC0B2435D39000A373D4 /* AnimeDetail.swift in Sources */,
 				6277AC082435CE2F00A373D4 /* AnimeDetailViewController.swift in Sources */,
-				6243F9CC243708E300B1C3E1 /* MangaPopupViewController.swift in Sources */,
+				6243F9CC243708E300B1C3E1 /* MangaDetailViewController.swift in Sources */,
 				6280AEE724348299004E551E /* AnimeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +451,7 @@
 		};
 		622C4DB8243462C1005DBBD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A666FE9C7BA30DD6F07045E /* Pods-Weebs Database.debug.xcconfig */;
+			baseConfigurationReference = A0374255EE79D6798E2FDC2D /* Pods-Weebs Database.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,7 +471,7 @@
 		};
 		622C4DB9243462C1005DBBD6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F622CD4A3EF295AFDBB3D1D0 /* Pods-Weebs Database.release.xcconfig */;
+			baseConfigurationReference = 7508056F17DEF63F9157AF72 /* Pods-Weebs Database.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

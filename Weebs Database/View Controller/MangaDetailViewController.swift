@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MangaPopupViewController: UIViewController {
+class MangaDetailViewController: UIViewController {
     
 
     @IBAction func dismissAction(_ sender: UIButton) {

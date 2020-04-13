@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Anime: Decodable{
+struct TopData: Decodable{
     let mal_id: Int
     let title: String
     let image_url: String

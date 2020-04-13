@@ -6,7 +6,8 @@ target 'Weebs Database' do
   use_frameworks!
 
   # Pods for Weebs Database
-pod 'Alamofire', '~> 5.0'
+pod 'Moya', '~> 14.0'
+
 
 
 end
