@@ -8,8 +8,9 @@
 
 import UIKit
 
-class MangaTableViewController: UITableViewController {
+class MangaTableViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     @IBAction func unwindToMangaTable(segue:UIStoryboardSegue) { }
     
     var topList: [TopData] = []
@@ -17,30 +18,10 @@ class MangaTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         fetchTopManga()
     }
-    
-    // MARK: - Table view data source
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return topList.count
-    }
-    
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AnimeTableViewCell", for: indexPath) as! AnimeTableViewCell
-        let item = topList[indexPath.row]
-        cell.titleLabel.text = item.title
-        cell.configureWith(url: item.image_url)
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        selectedMangaId = topList[indexPath.row].mal_id
-        return indexPath
-    }
-    
-    
     
     // MARK: - Navigation
     
@@ -68,3 +49,21 @@ extension MangaTableViewController {
     }
 }
 
+extension MangaTableViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return topList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AnimeTableViewCell", for: indexPath) as! AnimeTableViewCell
+        let item = topList[indexPath.row]
+        cell.titleLabel.text = item.title
+        cell.configureWith(url: item.image_url)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        selectedMangaId = topList[indexPath.row].mal_id
+        return indexPath
+    }
+}
