@@ -11,8 +11,8 @@ import Moya
 
 public enum ApiServices {
     
-    case topAnime
-    case topManga
+    case topAnime(page: Int)
+    case topManga(page: Int)
     case animeDetail(idAnime: Int)
     case mangaDetail(idManga: Int)
     
@@ -26,10 +26,10 @@ extension ApiServices : TargetType {
     
     public var path: String {
         switch self {
-        case .topAnime:
-            return "/top/anime/1/"
-        case .topManga:
-            return "/top/manga/1/"
+        case .topAnime(let page):
+            return "/top/anime/\(page)/"
+        case .topManga(let page):
+            return "/top/manga/\(page)/"
         case .animeDetail(let idAnime):
             return "/anime/\(idAnime)"
         case .mangaDetail(let idManga):
@@ -39,9 +39,9 @@ extension ApiServices : TargetType {
     
     public var method: Moya.Method {
         switch self {
-        case .topAnime:
+        case .topAnime(_):
             return .get
-        case .topManga:
+        case .topManga(_):
             return .get
         case .animeDetail(_):
             return .get
@@ -56,13 +56,13 @@ extension ApiServices : TargetType {
     
     public var task: Task {
         switch self {
-        case .topAnime:
+        case .topAnime(_):
             return .requestPlain
-        case .topManga:
+        case .topManga(_):
             return .requestPlain
-        case .animeDetail( _):
+        case .animeDetail(_):
             return .requestPlain
-        case .mangaDetail( _):
+        case .mangaDetail(_):
             return .requestPlain
         }
     }

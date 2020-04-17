@@ -12,9 +12,13 @@ import Alamofire
 class AnimeTableViewController: UITableViewController {
     
     @IBAction func unwindToAnimeTable(segue:UIStoryboardSegue) { }
-
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var topList: [TopData] = []
     var selectedAnimeId: Int = 0
+    var isLoading = false
+    var page: Int = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +37,13 @@ class AnimeTableViewController: UITableViewController {
         let item = topList[indexPath.row]
         cell.titleLabel.text = item.title
         cell.configureWith(url: item.image_url)
+        
+        if indexPath.row == topList.count - 1 { // last cell
+            page += 1
+            fetchTopAnime()
+        }
+        
+        
         return cell
     }
     
@@ -41,7 +52,6 @@ class AnimeTableViewController: UITableViewController {
         return indexPath
     }
     
-
     
     // MARK: - Navigation
 
@@ -61,9 +71,12 @@ class AnimeTableViewController: UITableViewController {
 
 extension AnimeTableViewController {
     func fetchTopAnime() {
-        AnimeProviders().getTopAnime { [weak self] (resp, error) in
+        guard !isLoading else { return }
+        isLoading = true
+        AnimeProviders().getTopAnime(page: self.page) { [weak self] (resp, error) in
             guard let topList = resp?.top else { return }
-            self?.topList = topList
+            self?.topList.append(contentsOf: topList)
+            self?.isLoading = false
             self?.tableView.reloadData()
         }
     }

@@ -12,10 +12,11 @@ import Moya
 struct AnimeProviders {
     
     func getTopAnime(
-        completion: @escaping (_ response: TopResponse?, _ error: Response?) -> Void
+        page: Int,
+        completion: @escaping (_ response: TopResponse?, _ error: ErrorResponse?) -> Void
         ){
         
-        NetworkManager.request(target: .topAnime, success: { (response) in
+        NetworkManager.request(target: .topAnime(page: page), success: { (response) in
             do {
                 let resp = try response.map(TopResponse.self)
                 

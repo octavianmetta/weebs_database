@@ -204,6 +204,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Anime" id="5k1-VK-gJL"/>
                     <navigationItem key="navigationItem" title="Top Airing Anime" largeTitleDisplayMode="always" id="KiA-d9-rkz"/>
+                    <connections>
+                        <outlet property="searchBar" destination="nVM-zv-QxH" id="hCg-VY-V6p"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Klr-Ie-51V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

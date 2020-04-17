@@ -26,6 +26,7 @@
 		6280AEEB243497EC004E551E /* TopData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280AEEA243497EC004E551E /* TopData.swift */; };
 		6280AEED243499B0004E551E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280AEEC243499B0004E551E /* NetworkManager.swift */; };
 		62CE4042243DC21900B9439E /* PosterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE4041243DC21900B9439E /* PosterDetailViewController.swift */; };
+		62EA1FB12445B72C000B7FBA /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA1FB02445B72C000B7FBA /* ErrorResponse.swift */; };
 		7FB98F706541DF4F23117C64 /* Pods_Weebs_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09E366E8E28CEF1BA8A6EAA /* Pods_Weebs_Database.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		6280AEEA243497EC004E551E /* TopData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopData.swift; sourceTree = "<group>"; };
 		6280AEEC243499B0004E551E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		62CE4041243DC21900B9439E /* PosterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterDetailViewController.swift; sourceTree = "<group>"; };
+		62EA1FB02445B72C000B7FBA /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		7508056F17DEF63F9157AF72 /* Pods-Weebs Database.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weebs Database.release.xcconfig"; path = "Target Support Files/Pods-Weebs Database/Pods-Weebs Database.release.xcconfig"; sourceTree = "<group>"; };
 		A0374255EE79D6798E2FDC2D /* Pods-Weebs Database.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weebs Database.debug.xcconfig"; path = "Target Support Files/Pods-Weebs Database/Pods-Weebs Database.debug.xcconfig"; sourceTree = "<group>"; };
 		A09E366E8E28CEF1BA8A6EAA /* Pods_Weebs_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weebs_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 				6280AEEA243497EC004E551E /* TopData.swift */,
 				6277AC0A2435D39000A373D4 /* AnimeDetail.swift */,
 				625237D82444475000CD30FF /* TopResponse.swift */,
+				62EA1FB02445B72C000B7FBA /* ErrorResponse.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				6280AEE224347399004E551E /* AnimeTableViewCell.swift in Sources */,
 				6277AC0B2435D39000A373D4 /* AnimeDetail.swift in Sources */,
 				6277AC082435CE2F00A373D4 /* AnimeDetailViewController.swift in Sources */,
+				62EA1FB12445B72C000B7FBA /* ErrorResponse.swift in Sources */,
 				6243F9CC243708E300B1C3E1 /* MangaDetailViewController.swift in Sources */,
 				6280AEE724348299004E551E /* AnimeTableViewController.swift in Sources */,
 			);

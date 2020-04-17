@@ -16,7 +16,7 @@ class NetworkManager: Networkable {
     static func request(
         target: ApiServices,
         success successCallback: @escaping (Response) -> Void,
-        error errorCallback: @escaping (Response) -> Void,
+        error errorCallback: @escaping (ErrorResponse) -> Void,
         failure failureCallback: ((MoyaError) -> Void)? = nil
         ) {
         //TODO: Add network manager
@@ -26,7 +26,13 @@ class NetworkManager: Networkable {
                 if response.statusCode >= 200 && response.statusCode <= 399 {
                     successCallback(response)
                 } else {
-                    errorCallback(response)
+                    do {
+                        let resp = try response.map(ErrorResponse.self)
+                        
+                        errorCallback(resp)
+                    } catch {
+                        print(error.localizedDescription)
+                    }
                 }
             case .failure(_):
                 failureCallback

@@ -15,6 +15,8 @@ class MangaTableViewController: UIViewController {
     
     var topList: [TopData] = []
     var selectedMangaId: Int = 0
+    var isLoading = false
+    var page: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,10 +43,11 @@ class MangaTableViewController: UIViewController {
 
 extension MangaTableViewController {
     func fetchTopManga() {
-        MangaProviders().getTopManga { [weak self] (resp, error) in
+        MangaProviders().getTopManga(page: page) { [weak self] (resp, error) in
             guard let topList = resp?.top else { return }
-            self?.topList = topList
+            self?.topList.append(contentsOf: topList)
             self?.tableView.reloadData()
+        
         }
     }
 }
