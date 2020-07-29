@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fnj-IJ-Ugd">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wpd-3b-jQW">
+            <objects>
+                <navigationController id="Fnj-IJ-Ugd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KjB-4w-dF7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dgz-KS-ESF" kind="relationship" relationship="rootViewController" id="POA-mt-CR8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfe-Zm-eWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1442" y="-54"/>
+        </scene>
+        <!--Login -->
+        <scene sceneID="jUC-hv-XZ8">
+            <objects>
+                <viewController id="Dgz-KS-ESF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QXs-6Q-jjz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vnc-jC-AyS">
+                                <rect key="frame" x="20" y="108" width="374" height="680"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4k-ec-eCD" customClass="GIDSignInButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="680"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vnc-jC-AyS" firstAttribute="top" secondItem="jOt-1N-hZ2" secondAttribute="top" constant="20" id="B5R-nT-yUt"/>
+                            <constraint firstItem="vnc-jC-AyS" firstAttribute="centerX" secondItem="QXs-6Q-jjz" secondAttribute="centerX" id="JQ5-0J-Hkc"/>
+                            <constraint firstItem="vnc-jC-AyS" firstAttribute="centerY" secondItem="QXs-6Q-jjz" secondAttribute="centerY" id="Knl-vo-jGA"/>
+                            <constraint firstItem="jOt-1N-hZ2" firstAttribute="trailing" secondItem="vnc-jC-AyS" secondAttribute="trailing" constant="20" id="rC8-VT-cqA"/>
+                            <constraint firstItem="vnc-jC-AyS" firstAttribute="leading" secondItem="jOt-1N-hZ2" secondAttribute="leading" constant="20" id="tJb-7I-wSx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jOt-1N-hZ2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login " id="mnk-dP-lcT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTg-cd-jY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-664" y="-54"/>
+        </scene>
+    </scenes>
+</document>

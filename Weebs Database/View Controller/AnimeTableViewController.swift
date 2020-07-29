@@ -17,7 +17,7 @@ class AnimeTableViewController: UITableViewController {
     var topList: [TopData] = []
     var selectedAnimeId: Int = 0
     var isLoading = false
-    var page: Int = 0
+    var page: Int = 1
 
     
     override func viewDidLoad() {
@@ -37,12 +37,6 @@ class AnimeTableViewController: UITableViewController {
         let item = topList[indexPath.row]
         cell.titleLabel.text = item.title
         cell.configureWith(url: item.image_url)
-        
-        if indexPath.row == topList.count - 1 { // last cell
-            page += 1
-            fetchTopAnime()
-        }
-        
         
         return cell
     }
@@ -78,6 +72,20 @@ extension AnimeTableViewController {
             self?.topList.append(contentsOf: topList)
             self?.isLoading = false
             self?.tableView.reloadData()
+        }
+    }
+    
+    override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        //Bottom Refresh
+        if scrollView == tableView{
+            
+            if ((scrollView.contentOffset.y + scrollView.frame.size.height) >= scrollView.contentSize.height)
+            {
+                if !isLoading{
+                    page += 1
+                    fetchTopAnime()
+                }
+            }
         }
     }
 }

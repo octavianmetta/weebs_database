@@ -16,7 +16,7 @@ class MangaTableViewController: UIViewController {
     var topList: [TopData] = []
     var selectedMangaId: Int = 0
     var isLoading = false
-    var page: Int = 0
+    var page: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +43,11 @@ class MangaTableViewController: UIViewController {
 
 extension MangaTableViewController {
     func fetchTopManga() {
+        guard !isLoading else { return }
         MangaProviders().getTopManga(page: page) { [weak self] (resp, error) in
             guard let topList = resp?.top else { return }
             self?.topList.append(contentsOf: topList)
+            self?.isLoading = false
             self?.tableView.reloadData()
         
         }
@@ -68,5 +70,19 @@ extension MangaTableViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         selectedMangaId = topList[indexPath.row].mal_id
         return indexPath
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        //Bottom Refresh
+        if scrollView == tableView{
+            
+            if ((scrollView.contentOffset.y + scrollView.frame.size.height) >= scrollView.contentSize.height)
+            {
+                if !isLoading{
+                    page += 1
+                    fetchTopManga()
+                }
+            }
+        }
     }
 }

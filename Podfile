@@ -7,7 +7,8 @@ target 'Weebs Database' do
 
   # Pods for Weebs Database
 pod 'Moya', '~> 14.0'
-
-
+pod 'Firebase/Analytics'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'
 
 end

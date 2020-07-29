@@ -14,11 +14,14 @@
 		622C4DAB243462BF005DBBD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C4DAA243462BF005DBBD6 /* ViewController.swift */; };
 		622C4DAE243462BF005DBBD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622C4DAC243462BF005DBBD6 /* Main.storyboard */; };
 		622C4DB0243462C1005DBBD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622C4DAF243462C1005DBBD6 /* Assets.xcassets */; };
+		622FB9C22449A5A600FC862B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FB9C12449A5A600FC862B /* LoginViewController.swift */; };
 		6243F9CC243708E300B1C3E1 /* MangaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6243F9CB243708E300B1C3E1 /* MangaDetailViewController.swift */; };
 		625237D92444475000CD30FF /* TopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625237D82444475000CD30FF /* TopResponse.swift */; };
 		625237DD2444552200CD30FF /* MangaProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625237DC2444552200CD30FF /* MangaProviders.swift */; };
 		625237E12444571400CD30FF /* MangaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625237E02444571400CD30FF /* MangaTableViewController.swift */; };
 		625237E4244460C600CD30FF /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625237E3244460C500CD30FF /* UIUtils.swift */; };
+		626035A2244D927400F429C0 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626035A1244D927400F429C0 /* LoginStoryboard.storyboard */; };
+		626035A4244D994400F429C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626035A3244D994400F429C0 /* GoogleService-Info.plist */; };
 		6277AC082435CE2F00A373D4 /* AnimeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AC072435CE2F00A373D4 /* AnimeDetailViewController.swift */; };
 		6277AC0B2435D39000A373D4 /* AnimeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AC0A2435D39000A373D4 /* AnimeDetail.swift */; };
 		6280AEE224347399004E551E /* AnimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280AEE124347399004E551E /* AnimeTableViewCell.swift */; };
@@ -40,11 +43,14 @@
 		622C4DAD243462BF005DBBD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		622C4DAF243462C1005DBBD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		622C4DB4243462C1005DBBD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		622FB9C12449A5A600FC862B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6243F9CB243708E300B1C3E1 /* MangaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDetailViewController.swift; sourceTree = "<group>"; };
 		625237D82444475000CD30FF /* TopResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopResponse.swift; sourceTree = "<group>"; };
 		625237DC2444552200CD30FF /* MangaProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaProviders.swift; sourceTree = "<group>"; };
 		625237E02444571400CD30FF /* MangaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaTableViewController.swift; sourceTree = "<group>"; };
 		625237E3244460C500CD30FF /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		626035A1244D927400F429C0 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		626035A3244D994400F429C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6277AC072435CE2F00A373D4 /* AnimeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailViewController.swift; sourceTree = "<group>"; };
 		6277AC0A2435D39000A373D4 /* AnimeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetail.swift; sourceTree = "<group>"; };
 		6280AEE124347399004E551E /* AnimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTableViewCell.swift; sourceTree = "<group>"; };
@@ -111,14 +117,15 @@
 		622C4DA7243462BF005DBBD6 /* Weebs Database */ = {
 			isa = PBXGroup;
 			children = (
+				622FB9C32449A73D00FC862B /* Storyboards */,
 				625237E2244460AF00CD30FF /* Utils */,
 				6277AC092435CE4E00A373D4 /* View Controller */,
 				6280AEE3243473A6004E551E /* UI Utils */,
 				622C4DBA2434632E005DBBD6 /* Network */,
 				622C4DA8243462BF005DBBD6 /* AppDelegate.swift */,
 				622C4DAA243462BF005DBBD6 /* ViewController.swift */,
-				622C4DAC243462BF005DBBD6 /* Main.storyboard */,
 				622C4DAF243462C1005DBBD6 /* Assets.xcassets */,
+				626035A3244D994400F429C0 /* GoogleService-Info.plist */,
 				622C4DB4243462C1005DBBD6 /* Info.plist */,
 			);
 			path = "Weebs Database";
@@ -136,6 +143,23 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		622FB9C02449A56100FC862B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				622FB9C12449A5A600FC862B /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		622FB9C32449A73D00FC862B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				622C4DAC243462BF005DBBD6 /* Main.storyboard */,
+				626035A1244D927400F429C0 /* LoginStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		625237E2244460AF00CD30FF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +171,7 @@
 		6277AC092435CE4E00A373D4 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				622FB9C02449A56100FC862B /* Login */,
 				6280AEE624348299004E551E /* AnimeTableViewController.swift */,
 				6277AC072435CE2F00A373D4 /* AnimeDetailViewController.swift */,
 				6243F9CB243708E300B1C3E1 /* MangaDetailViewController.swift */,
@@ -193,6 +218,7 @@
 				622C4DA2243462BF005DBBD6 /* Frameworks */,
 				622C4DA3243462BF005DBBD6 /* Resources */,
 				DF928F5E64D69C641113D965 /* [CP] Embed Pods Frameworks */,
+				AAB81A4B4CE63096D2DFA0EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +267,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626035A2244D927400F429C0 /* LoginStoryboard.storyboard in Resources */,
+				626035A4244D994400F429C0 /* GoogleService-Info.plist in Resources */,
 				622C4DB0243462C1005DBBD6 /* Assets.xcassets in Resources */,
 				622C4DAE243462BF005DBBD6 /* Main.storyboard in Resources */,
 			);
@@ -249,6 +277,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AAB81A4B4CE63096D2DFA0EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weebs Database/Pods-Weebs Database-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weebs Database/Pods-Weebs Database-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C1700CEC30C337FF687B8FC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,14 +331,26 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Weebs Database/Pods-Weebs Database-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -306,6 +368,7 @@
 				62CE4042243DC21900B9439E /* PosterDetailViewController.swift in Sources */,
 				621F0179243F128F006B3C91 /* Networkable.swift in Sources */,
 				6280AEEB243497EC004E551E /* TopData.swift in Sources */,
+				622FB9C22449A5A600FC862B /* LoginViewController.swift in Sources */,
 				625237E12444571400CD30FF /* MangaTableViewController.swift in Sources */,
 				625237E4244460C600CD30FF /* UIUtils.swift in Sources */,
 				621F017D243F2D47006B3C91 /* AnimeProviders.swift in Sources */,
